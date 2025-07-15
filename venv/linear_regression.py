@@ -34,3 +34,5 @@ pred=model.predict(X)
 plt.scatter(X,Y,label='original data')
 plt.plot(X,pred,label='predicted data')
 plt.show()
+
+#test
