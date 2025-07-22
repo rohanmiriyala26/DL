@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 
 #load the data
 (X_train,y_train),(X_test,y_test)=mnist.load_data()
-#print(X_train.shape)
+print(X_train.shape)
 y_test1=y_test
 #normalize the data
 
@@ -32,7 +32,7 @@ model.add(Dense(10,activation='softmax'))
 model.compile(optimizer='Adam',loss='categorical_crossentropy',metrics=['accuracy'])
 
 #train the model
-model.fit(X_train,y_train,epochs=1,batch_size=64)
+model.fit(X_train,y_train,epochs=5,batch_size=64)
 
 #evaluate
 model.evaluate(X_test,y_test)
